@@ -3,21 +3,21 @@
 class Solution:
     def allPairs(self, A, B, N, M, X):
         # Your code goes here 
-        # target= []
-        # for i in range(N):
-        #     for j in range(M):
-        #         if A[i]+B[j]==X:
-        #             target.append((A[i],B[j]))
+        target= []
+        for i in range(N):
+            for j in range(M):
+                if A[i]+B[j]==X:
+                    target.append((A[i],B[j]))
                     
-        # return target
-        l = []
-        for i in A:
-            for j in B:
-                if i + j ==X:
-                    l.append((i,j))
+        return sorted(target)
+        # l = []
+        # for i in A:
+        #     for j in B:
+        #         if i + j ==X:
+        #             l.append((i,j))
         
-        l.sort()    
-        return l
+        # l.sort()    
+        # return l
         
                     
                     
