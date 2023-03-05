@@ -10,14 +10,7 @@ class Solution:
                     target.append((A[i],B[j]))
                     
         return sorted(target)
-        # l = []
-        # for i in A:
-        #     for j in B:
-        #         if i + j ==X:
-        #             l.append((i,j))
         
-        # l.sort()    
-        # return l
         
                     
                     
