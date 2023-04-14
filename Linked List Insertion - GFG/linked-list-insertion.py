@@ -9,7 +9,8 @@ class Solution:
     def insertAtBegining(self,head,x):
         # code here 
         new = Node(x)
-        new.next = head
+        if head:
+            new.next = head
         head = new
         return head
         
