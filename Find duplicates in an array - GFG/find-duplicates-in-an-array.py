@@ -1,25 +1,25 @@
 class Solution:
     def duplicates(self,arr,n):
         # Step 1: Create a dictionary to store the frequency of elements
-        freq_dict = {}
+        d = {}
         
         # Step 2: Count the occurrences of each element
         for num in arr:
-            if num in freq_dict:
-                freq_dict[num] += 1
+            if num in d:
+                d[num] += 1
             else:
-                freq_dict[num] = 1
+                d[num] = 1
         
         # Step 3: Create a list to store elements occurring more than once
-        duplicates = []
-        for num, freq in freq_dict.items():
-            if freq > 1:
-                duplicates.append(num)
+        d1 = []
+        for k,v in d.items():
+            if v > 1:
+                d1.append(k)
         
-        # Step 4: Return the sorted list of duplicates
-        if len(duplicates)==0:
-            duplicates.append(-1)
-        return sorted(duplicates)
+        # Step 4: Return the sorted list of d1
+        if len(d1)==0:
+            d1.append(-1)
+        return sorted(d1)
 
 
     	   
