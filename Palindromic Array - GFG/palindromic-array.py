@@ -1,22 +1,23 @@
 # Your task is to complete this function
 # Function should return True/False or 1/0
 def f(s):
-    if s==s[::-1]:
+    if s == s[::-1]:
         return True
-    return False    
+    return False
+
+
 def PalinArray(arr ,n):
     flag = True
     for i in arr:
-        if f(str(i))==False:
+        if f(str(i))== False:
             flag = False
             break
     
     if flag:
         return True
     
-    return False    
-        
-
+    else:
+        return False
 
 
 #{ 
