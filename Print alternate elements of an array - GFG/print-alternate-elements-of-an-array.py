@@ -6,7 +6,7 @@ def printAl(arr,n):
     # your code here
     # a = []
     for i in range(n):
-        if i%2 == 1:
+        if (i+1)%2 == 0:
             continue
         else:
             print(arr[i],end=" ")
