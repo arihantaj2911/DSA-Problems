@@ -2,18 +2,30 @@
 
 class Solution:
     def findIndex (self,a, N, k):
-        #code he
-        cnt=[]
-        for i in range(N):
-            if a[i] ==k:
-                cnt.append(i)
-        if len(cnt)==0:
-            return [-1,-1]
+        # code he
+        # cnt=[]
+        # for i in range(N):
+        #     if a[i] ==k:
+        #         cnt.append(i)
+        # if len(cnt)==0:
+        #     return [-1,-1]
         
-        return cnt[0],cnt[-1]    
-        # res = []
-        # for i in a:
-        #     if res.append()
+        # return cnt[0],cnt[-1]    
+        res = []
+        j =0
+        for i in range(N):
+            if a[i]==k:
+                j =i
+                res.append(i)
+                break
+        for i in range(N-1,j-1,-1):
+            if a[i] == k:
+                res.append(i)
+                break
+            
+            if len(res)==0:
+                return [-1,-1]
+        return res
         
         
 
