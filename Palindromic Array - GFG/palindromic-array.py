@@ -1,15 +1,24 @@
 # Your task is to complete this function
 # Function should return True/False or 1/0
 def f(s):
-    if s == s[::-1]:
+    t = s
+    ans = 0
+    while t:
+        temp = t%10
+        ans = ans*10+temp
+        t //= 10
+    
+    if s==ans:
         return True
-    return False
+    
+    return False    
+    
 
 
 def PalinArray(arr ,n):
     flag = True
     for i in arr:
-        if f(str(i))== False:
+        if f(i)== False:
             flag = False
             break
     
