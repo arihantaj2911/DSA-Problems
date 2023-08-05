@@ -5,11 +5,20 @@ class Solution:
     def kLargest(self,li,n,k):
         # code here
         li.sort(reverse = True)
-        ans = []
-        for i in range(k):
-            ans.append(li[i])
+        # a = []
+        # for i in range(n):
+        #     if i>k-1:
+        #         li.pop()
+        #     else:
+        #         a.append(li[i])
+        # return a
         
-        return ans
+        # #### 2nd appro
+        # ans = []
+        # for i in range(k):
+        #     ans.append(li[i])
+        
+        return li[:k]
             
             
             
